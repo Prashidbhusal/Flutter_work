@@ -1,5 +1,6 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:motion_toast/motion_toast.dart';
 
 class CardScreen extends StatefulWidget {
   const CardScreen({super.key});
@@ -10,18 +11,23 @@ class CardScreen extends StatefulWidget {
 
 class _CardScreenState extends State<CardScreen> {
   Widget _cardwidget(String title) {
-    return SizedBox(
-      height: 100,
-      width: double.infinity,
-      child: Card(
-        color: Color.fromARGB(255, 192, 56, 185),
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
-        child: Center(
-          child: Text(
-            title,
-            style: const TextStyle(
-              fontSize: 20,
-              
+    return GestureDetector(
+      onTap: () {
+        MotionToast.success(description: const Text('Okay Done'));
+      },
+      child: SizedBox(
+        height: 100,
+        width: double.infinity,
+        child: Card(
+          color: Color.fromARGB(255, 189, 209, 5),
+          shape:
+              RoundedRectangleBorder(borderRadius: BorderRadius.circular(100)),
+          child: Center(
+            child: Text(
+              title,
+              style: const TextStyle(
+                fontSize: 20,
+              ),
             ),
           ),
         ),
@@ -34,7 +40,7 @@ class _CardScreenState extends State<CardScreen> {
     return SafeArea(
       child: SingleChildScrollView(
         child: Column(
-            children: [for (int i = 0; i <= 20; i++) _cardwidget("card $i")]),
+            children: [for (int i = 0; i <= 10; i++) _cardwidget("card $i")]),
       ),
     );
   }

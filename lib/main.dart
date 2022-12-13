@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:myfirstapp/Calculator.dart';
 import 'package:myfirstapp/CardScreen.dart';
+import 'package:myfirstapp/Gridscreen.dart';
 import 'package:myfirstapp/RowsandColumn.dart';
 import 'package:myfirstapp/SnackbarScreen.dart';
 // import 'package:myfirstapp/StudentDetails.dart';
@@ -13,8 +15,11 @@ void main() {
     title: 'Different Screen',
     initialRoute: '/',
     routes: {
+      '/': (context) => const Calculatorapp(),
+      '/GridScreen': (context) => const Gridscreen(),
       '/StudentDetailsScreen': (context) => const StudentDetailsScreen(),
-      '/': (context) => const CardScreen(),
+      '/CardScreen': (context) => const CardScreen(),
+
       // '/StudentDetails': (context) => const StudentDetails(),
       '/Snackbarscreen': (context) => const Snackbarscreen(),
       '/rowscolumnscreen': (context) => const rowscolumnscreen(),

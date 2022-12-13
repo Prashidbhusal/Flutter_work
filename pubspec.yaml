@@ -38,6 +38,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   fluttertoast: ^8.1.1
   dropdown_plus: ^0.0.9
+  motion_toast: ^2.6.4
   # add this line to your dependenci
 dev_dependencies:
   flutter_test:
