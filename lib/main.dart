@@ -13,8 +13,8 @@ void main() {
     title: 'Different Screen',
     initialRoute: '/',
     routes: {
-      '/': (context) => const StudentDetailsScreen(),
-      '/Cardscreen': (context) => const Cardscreen(),
+      '/StudentDetailsScreen': (context) => const StudentDetailsScreen(),
+      '/': (context) => const CardScreen(),
       // '/StudentDetails': (context) => const StudentDetails(),
       '/Snackbarscreen': (context) => const Snackbarscreen(),
       '/rowscolumnscreen': (context) => const rowscolumnscreen(),
