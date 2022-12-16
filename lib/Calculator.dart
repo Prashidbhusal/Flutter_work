@@ -22,7 +22,8 @@ class _CalculatorappState extends State<Calculatorapp> {
         decoration: const InputDecoration(
           border: OutlineInputBorder(),
         ),
-      )),
+      ),
+      ),
     );
   }
 
@@ -51,7 +52,6 @@ class _CalculatorappState extends State<Calculatorapp> {
   Widget _button(String name) {
     return SizedBox(
       height: 5,
-      
       child: ElevatedButton(
         onPressed: () {
           setState(() {});
@@ -64,8 +64,14 @@ class _CalculatorappState extends State<Calculatorapp> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.grey,
       appBar: AppBar(
-        title: const Text("Calculator App"),
+        title: const Text(
+          "Calculator App",
+          style: TextStyle(
+              fontWeight: FontWeight.bold, color: Colors.indigoAccent),
+        ),
+        backgroundColor: Colors.lightGreen,
       ),
       body: Column(
         children: [

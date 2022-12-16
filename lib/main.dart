@@ -4,6 +4,7 @@ import 'package:myfirstapp/CardScreen.dart';
 import 'package:myfirstapp/Gridscreen.dart';
 import 'package:myfirstapp/RowsandColumn.dart';
 import 'package:myfirstapp/SnackbarScreen.dart';
+import 'package:myfirstapp/datatable_screen.dart';
 // import 'package:myfirstapp/StudentDetails.dart';
 import 'package:myfirstapp/displaystudent.dart';
 import 'package:myfirstapp/flaxiblescreen.dart';
@@ -15,6 +16,7 @@ void main() {
     title: 'Different Screen',
     initialRoute: '/',
     routes: {
+      '/DisplayTableScreen': (context) => const DisplayTableScreen(),
       '/': (context) => const Calculatorapp(),
       '/GridScreen': (context) => const Gridscreen(),
       '/StudentDetailsScreen': (context) => const StudentDetailsScreen(),
